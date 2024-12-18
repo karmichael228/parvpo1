@@ -21,7 +21,7 @@ void shell_sort_parallel(std::vector<int>& arr) {
 }
 
 int main() {
-    int n = 100000000;
+    int n = 200000000;
     std::vector<int> arr(n);
     std::random_device rd;
     std::mt19937 gen(rd());
