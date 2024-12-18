@@ -30,9 +30,7 @@ int main() {
     for (int i = 0; i < n; i++) {
         arr[i] = dis(gen);
     }
-
-    int max_threads = omp_get_max_threads(); 
-
+    omp_set_num_threads(6);  
     auto start = std::chrono::high_resolution_clock::now();
     shell_sort_parallel(arr);
     auto end = std::chrono::high_resolution_clock::now();
